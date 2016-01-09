@@ -24,9 +24,6 @@ Example:
 $./id.py -s 4 -p sat4j ./data/KSEM09/001.cnf
 ```
 
-
-[1] G. Xiao, Z. Lin, Y. Ma, and G. Qi. **Computing inconsistency measurements under multi-valued semantics by partial max-SAT solvers.** In *Proc. of KR’10*, pages 340–349, 2010. [pdf](http://www.ghxiao.org/publications/xlmq2010-kr-id2pmaxsat.pdf)
-
 ## LICENSE
 
 ```
@@ -44,3 +41,6 @@ $./id.py -s 4 -p sat4j ./data/KSEM09/001.cnf
    See the License for the specific language governing permissions and
    limitations under the License.
 ```
+
+
+[1] G. Xiao, Z. Lin, Y. Ma, and G. Qi. **Computing inconsistency measurements under multi-valued semantics by partial max-SAT solvers.** In *Proc. of KR’10*, pages 340–349, 2010. [pdf](http://www.ghxiao.org/publications/xlmq2010-kr-id2pmaxsat.pdf)
