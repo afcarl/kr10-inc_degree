@@ -1,0 +1,188 @@
+\hypertarget{classedu_1_1pku_1_1id_1_1_i_d_measurer}{
+\section{edu.pku.id.IDMeasurer Class Reference}
+\label{classedu_1_1pku_1_1id_1_1_i_d_measurer}\index{edu::pku::id::IDMeasurer@{edu::pku::id::IDMeasurer}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classedu_1_1pku_1_1id_1_1_i_d_measurer_a65d2af55e75374876207d60a7bd9de9c}{IDMeasurer} (String fileName)  throws FileNotFoundException 
+\item 
+\hyperlink{classedu_1_1pku_1_1id_1_1_i_d_measurer_a74c84279b179c7eeebfa8f5924e958ce}{IDMeasurer} (File file)  throws FileNotFoundException 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classedu_1_1pku_1_1id_1_1_i_d_measurer_acdadb95e18e539d7e54d9334f65b6cc3}{main} (String\mbox{[}$\,$\mbox{]} args)  throws Exception 
+\end{DoxyCompactItemize}
+\subsection*{Package Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classedu_1_1pku_1_1id_1_1_i_d_measurer_aec462913189fa5fa4dc6dcee6f4a8583}{measure} ()  throws IOException, ParseFormatException, SecurityException, IllegalArgumentException, NoSuchFieldException, IllegalAccessException, 			TimeoutException 
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classedu_1_1pku_1_1id_1_1_cnf_file_reader}{CnfFileReader} \hyperlink{classedu_1_1pku_1_1id_1_1_i_d_measurer_a1d0c7809f92ca53c0c7c1eeafde84275}{problemReader}
+\end{DoxyCompactItemize}
+\subsection*{Static Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{namespaceedu_1_1pku_1_1id_ad71ddcb0be4b31cdeeb2a5d755309f2d}{MultiValuedSemantics} \hyperlink{classedu_1_1pku_1_1id_1_1_i_d_measurer_a525c9e5ca2233b8509ec1133ee9e86c2}{semantics} = MultiValuedSemantics.QC
+\item 
+static \hyperlink{namespaceedu_1_1pku_1_1id_a7936f4efdc70b70b965d63bd005a2513}{SATProblemType} \hyperlink{classedu_1_1pku_1_1id_1_1_i_d_measurer_a5955b5897c93bd335f41b8c45ef1365e}{problemType} = SATProblemType.PartialMaxSAT
+\item 
+static PrintStream \hyperlink{classedu_1_1pku_1_1id_1_1_i_d_measurer_a6f306b1fa0b91200df925ca4c7d0dfb2}{console} = System.out
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int\mbox{[}$\,$\mbox{]} \hyperlink{classedu_1_1pku_1_1id_1_1_i_d_measurer_adc1192ea4608637f1d5f0a4f33b8d8b0}{getModelFromLauncher} (AbstractLauncher launcher)  throws SecurityException, NoSuchFieldException, IllegalArgumentException, 			IllegalAccessException 
+\item 
+PrintStream \hyperlink{classedu_1_1pku_1_1id_1_1_i_d_measurer_ab0227dd5bd76d967de102ed7d794cd9a}{setOut} (PrintStream out)
+\item 
+PrintStream \hyperlink{classedu_1_1pku_1_1id_1_1_i_d_measurer_ae3a14a1ef4278a66bac9081a95fbaeb6}{setOut} (String outFileName)
+\item 
+int \hyperlink{classedu_1_1pku_1_1id_1_1_i_d_measurer_ab286d1ce077786faa0875d8c47ddf2f6}{count} (int\mbox{[}$\,$\mbox{]} model)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classedu_1_1pku_1_1id_1_1_i_d_measurer_ab33f6e35b6b1754b19f5eecbb68ba63a}{testFiles} (File\mbox{[}$\,$\mbox{]} files, final int n)  throws FileNotFoundException, IOException, ParseFormatException, NoSuchFieldException, 			IllegalAccessException, TimeoutException 
+\item 
+static void \hyperlink{classedu_1_1pku_1_1id_1_1_i_d_measurer_a27df87766323def178933b6b7316958d}{testOne} (File file)  throws FileNotFoundException, IOException, ParseFormatException, NoSuchFieldException, IllegalAccessException, 			SecurityException, IllegalArgumentException, TimeoutException 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classedu_1_1pku_1_1id_1_1_i_d_measurer_ad2e7d766a3189d08bbe03f34183c1834}{nbVars}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classedu_1_1pku_1_1id_1_1_i_d_measurer_a65d2af55e75374876207d60a7bd9de9c}{
+\index{edu::pku::id::IDMeasurer@{edu::pku::id::IDMeasurer}!IDMeasurer@{IDMeasurer}}
+\index{IDMeasurer@{IDMeasurer}!edu::pku::id::IDMeasurer@{edu::pku::id::IDMeasurer}}
+\subsubsection[{IDMeasurer}]{\setlength{\rightskip}{0pt plus 5cm}edu.pku.id.IDMeasurer.IDMeasurer (
+\begin{DoxyParamCaption}
+\item[{String}]{ fileName}
+\end{DoxyParamCaption}
+)  throws FileNotFoundException }}
+\label{classedu_1_1pku_1_1id_1_1_i_d_measurer_a65d2af55e75374876207d60a7bd9de9c}
+\hypertarget{classedu_1_1pku_1_1id_1_1_i_d_measurer_a74c84279b179c7eeebfa8f5924e958ce}{
+\index{edu::pku::id::IDMeasurer@{edu::pku::id::IDMeasurer}!IDMeasurer@{IDMeasurer}}
+\index{IDMeasurer@{IDMeasurer}!edu::pku::id::IDMeasurer@{edu::pku::id::IDMeasurer}}
+\subsubsection[{IDMeasurer}]{\setlength{\rightskip}{0pt plus 5cm}edu.pku.id.IDMeasurer.IDMeasurer (
+\begin{DoxyParamCaption}
+\item[{File}]{ file}
+\end{DoxyParamCaption}
+)  throws FileNotFoundException }}
+\label{classedu_1_1pku_1_1id_1_1_i_d_measurer_a74c84279b179c7eeebfa8f5924e958ce}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classedu_1_1pku_1_1id_1_1_i_d_measurer_ab286d1ce077786faa0875d8c47ddf2f6}{
+\index{edu::pku::id::IDMeasurer@{edu::pku::id::IDMeasurer}!count@{count}}
+\index{count@{count}!edu::pku::id::IDMeasurer@{edu::pku::id::IDMeasurer}}
+\subsubsection[{count}]{\setlength{\rightskip}{0pt plus 5cm}int edu.pku.id.IDMeasurer.count (
+\begin{DoxyParamCaption}
+\item[{int\mbox{[}$\,$\mbox{]}}]{ model}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_i_d_measurer_ab286d1ce077786faa0875d8c47ddf2f6}
+\hypertarget{classedu_1_1pku_1_1id_1_1_i_d_measurer_adc1192ea4608637f1d5f0a4f33b8d8b0}{
+\index{edu::pku::id::IDMeasurer@{edu::pku::id::IDMeasurer}!getModelFromLauncher@{getModelFromLauncher}}
+\index{getModelFromLauncher@{getModelFromLauncher}!edu::pku::id::IDMeasurer@{edu::pku::id::IDMeasurer}}
+\subsubsection[{getModelFromLauncher}]{\setlength{\rightskip}{0pt plus 5cm}int \mbox{[}$\,$\mbox{]} edu.pku.id.IDMeasurer.getModelFromLauncher (
+\begin{DoxyParamCaption}
+\item[{AbstractLauncher}]{ launcher}
+\end{DoxyParamCaption}
+)  throws SecurityException, NoSuchFieldException, IllegalArgumentException, 			IllegalAccessException \hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_i_d_measurer_adc1192ea4608637f1d5f0a4f33b8d8b0}
+\hypertarget{classedu_1_1pku_1_1id_1_1_i_d_measurer_acdadb95e18e539d7e54d9334f65b6cc3}{
+\index{edu::pku::id::IDMeasurer@{edu::pku::id::IDMeasurer}!main@{main}}
+\index{main@{main}!edu::pku::id::IDMeasurer@{edu::pku::id::IDMeasurer}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}static void edu.pku.id.IDMeasurer.main (
+\begin{DoxyParamCaption}
+\item[{String\mbox{[}$\,$\mbox{]}}]{ args}
+\end{DoxyParamCaption}
+)  throws Exception \hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_i_d_measurer_acdadb95e18e539d7e54d9334f65b6cc3}
+\hypertarget{classedu_1_1pku_1_1id_1_1_i_d_measurer_aec462913189fa5fa4dc6dcee6f4a8583}{
+\index{edu::pku::id::IDMeasurer@{edu::pku::id::IDMeasurer}!measure@{measure}}
+\index{measure@{measure}!edu::pku::id::IDMeasurer@{edu::pku::id::IDMeasurer}}
+\subsubsection[{measure}]{\setlength{\rightskip}{0pt plus 5cm}double edu.pku.id.IDMeasurer.measure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)  throws IOException, ParseFormatException, SecurityException, IllegalArgumentException, NoSuchFieldException, IllegalAccessException, 			TimeoutException \hspace{0.3cm}{\ttfamily  \mbox{[}package\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_i_d_measurer_aec462913189fa5fa4dc6dcee6f4a8583}
+\hypertarget{classedu_1_1pku_1_1id_1_1_i_d_measurer_ae3a14a1ef4278a66bac9081a95fbaeb6}{
+\index{edu::pku::id::IDMeasurer@{edu::pku::id::IDMeasurer}!setOut@{setOut}}
+\index{setOut@{setOut}!edu::pku::id::IDMeasurer@{edu::pku::id::IDMeasurer}}
+\subsubsection[{setOut}]{\setlength{\rightskip}{0pt plus 5cm}PrintStream edu.pku.id.IDMeasurer.setOut (
+\begin{DoxyParamCaption}
+\item[{String}]{ outFileName}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_i_d_measurer_ae3a14a1ef4278a66bac9081a95fbaeb6}
+\hypertarget{classedu_1_1pku_1_1id_1_1_i_d_measurer_ab0227dd5bd76d967de102ed7d794cd9a}{
+\index{edu::pku::id::IDMeasurer@{edu::pku::id::IDMeasurer}!setOut@{setOut}}
+\index{setOut@{setOut}!edu::pku::id::IDMeasurer@{edu::pku::id::IDMeasurer}}
+\subsubsection[{setOut}]{\setlength{\rightskip}{0pt plus 5cm}PrintStream edu.pku.id.IDMeasurer.setOut (
+\begin{DoxyParamCaption}
+\item[{PrintStream}]{ out}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_i_d_measurer_ab0227dd5bd76d967de102ed7d794cd9a}
+\hypertarget{classedu_1_1pku_1_1id_1_1_i_d_measurer_ab33f6e35b6b1754b19f5eecbb68ba63a}{
+\index{edu::pku::id::IDMeasurer@{edu::pku::id::IDMeasurer}!testFiles@{testFiles}}
+\index{testFiles@{testFiles}!edu::pku::id::IDMeasurer@{edu::pku::id::IDMeasurer}}
+\subsubsection[{testFiles}]{\setlength{\rightskip}{0pt plus 5cm}static void edu.pku.id.IDMeasurer.testFiles (
+\begin{DoxyParamCaption}
+\item[{File\mbox{[}$\,$\mbox{]}}]{ files, }
+\item[{final int}]{ n}
+\end{DoxyParamCaption}
+)  throws FileNotFoundException, IOException, ParseFormatException, NoSuchFieldException, 			IllegalAccessException, TimeoutException \hspace{0.3cm}{\ttfamily  \mbox{[}static, private\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_i_d_measurer_ab33f6e35b6b1754b19f5eecbb68ba63a}
+\hypertarget{classedu_1_1pku_1_1id_1_1_i_d_measurer_a27df87766323def178933b6b7316958d}{
+\index{edu::pku::id::IDMeasurer@{edu::pku::id::IDMeasurer}!testOne@{testOne}}
+\index{testOne@{testOne}!edu::pku::id::IDMeasurer@{edu::pku::id::IDMeasurer}}
+\subsubsection[{testOne}]{\setlength{\rightskip}{0pt plus 5cm}static void edu.pku.id.IDMeasurer.testOne (
+\begin{DoxyParamCaption}
+\item[{File}]{ file}
+\end{DoxyParamCaption}
+)  throws FileNotFoundException, IOException, ParseFormatException, NoSuchFieldException, IllegalAccessException, 			SecurityException, IllegalArgumentException, TimeoutException \hspace{0.3cm}{\ttfamily  \mbox{[}static, private\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_i_d_measurer_a27df87766323def178933b6b7316958d}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classedu_1_1pku_1_1id_1_1_i_d_measurer_a6f306b1fa0b91200df925ca4c7d0dfb2}{
+\index{edu::pku::id::IDMeasurer@{edu::pku::id::IDMeasurer}!console@{console}}
+\index{console@{console}!edu::pku::id::IDMeasurer@{edu::pku::id::IDMeasurer}}
+\subsubsection[{console}]{\setlength{\rightskip}{0pt plus 5cm}PrintStream {\bf edu.pku.id.IDMeasurer.console} = System.out\hspace{0.3cm}{\ttfamily  \mbox{[}static, package\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_i_d_measurer_a6f306b1fa0b91200df925ca4c7d0dfb2}
+\hypertarget{classedu_1_1pku_1_1id_1_1_i_d_measurer_ad2e7d766a3189d08bbe03f34183c1834}{
+\index{edu::pku::id::IDMeasurer@{edu::pku::id::IDMeasurer}!nbVars@{nbVars}}
+\index{nbVars@{nbVars}!edu::pku::id::IDMeasurer@{edu::pku::id::IDMeasurer}}
+\subsubsection[{nbVars}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf edu.pku.id.IDMeasurer.nbVars}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_i_d_measurer_ad2e7d766a3189d08bbe03f34183c1834}
+\hypertarget{classedu_1_1pku_1_1id_1_1_i_d_measurer_a1d0c7809f92ca53c0c7c1eeafde84275}{
+\index{edu::pku::id::IDMeasurer@{edu::pku::id::IDMeasurer}!problemReader@{problemReader}}
+\index{problemReader@{problemReader}!edu::pku::id::IDMeasurer@{edu::pku::id::IDMeasurer}}
+\subsubsection[{problemReader}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CnfFileReader} {\bf edu.pku.id.IDMeasurer.problemReader}\hspace{0.3cm}{\ttfamily  \mbox{[}package\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_i_d_measurer_a1d0c7809f92ca53c0c7c1eeafde84275}
+\hypertarget{classedu_1_1pku_1_1id_1_1_i_d_measurer_a5955b5897c93bd335f41b8c45ef1365e}{
+\index{edu::pku::id::IDMeasurer@{edu::pku::id::IDMeasurer}!problemType@{problemType}}
+\index{problemType@{problemType}!edu::pku::id::IDMeasurer@{edu::pku::id::IDMeasurer}}
+\subsubsection[{problemType}]{\setlength{\rightskip}{0pt plus 5cm}{\bf SATProblemType} {\bf edu.pku.id.IDMeasurer.problemType} = SATProblemType.PartialMaxSAT\hspace{0.3cm}{\ttfamily  \mbox{[}static, package\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_i_d_measurer_a5955b5897c93bd335f41b8c45ef1365e}
+\hypertarget{classedu_1_1pku_1_1id_1_1_i_d_measurer_a525c9e5ca2233b8509ec1133ee9e86c2}{
+\index{edu::pku::id::IDMeasurer@{edu::pku::id::IDMeasurer}!semantics@{semantics}}
+\index{semantics@{semantics}!edu::pku::id::IDMeasurer@{edu::pku::id::IDMeasurer}}
+\subsubsection[{semantics}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MultiValuedSemantics} {\bf edu.pku.id.IDMeasurer.semantics} = MultiValuedSemantics.QC\hspace{0.3cm}{\ttfamily  \mbox{[}static, package\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_i_d_measurer_a525c9e5ca2233b8509ec1133ee9e86c2}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+src/edu/pku/id/\hyperlink{_i_d_measurer_8java}{IDMeasurer.java}\end{DoxyCompactItemize}

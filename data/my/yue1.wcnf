@@ -1,0 +1,8 @@
+c A temporal KB for measuring ID
+p wcnf 8 6
+3 3 0
+3 4 0
+3 3 7 0
+3 8 0
+1 -3 -4 0
+1 -7 -8 0

@@ -1,0 +1,56 @@
+c SAT4J: a SATisfiability library for Java (c) 2004-2010 Daniel Le Berre
+c This is free software under the dual EPL/GNU LGPL licenses.
+c See www.sat4j.org for details.
+c This software uses some libraries from the Jakarta Commons project. See jakarta.apache.org for details.
+c version 2.2.2.v20101017
+c java.runtime.name	Java(TM) SE Runtime Environment
+c java.vm.name		Java HotSpot(TM) 64-Bit Server VM
+c java.vm.version	17.1-b03-307
+c java.vm.vendor	Apple Inc.
+c sun.arch.data.model	64
+c java.version		1.6.0_22
+c os.name		Mac OS X
+c os.version		10.6.6
+c os.arch		x86_64
+c Free memory 		263822128
+c Max memory 		532545536
+c Total memory 		266272768
+c Number of processors 	2
+c --- Begin Solver configuration ---
+c org.sat4j.pb.constraints.CompetResolutionPBMixedWLClauseCardConstrDataStructure@19e0ff2f
+c Learn all clauses as in MiniSAT
+c claDecay=0.999 varDecay=0.95 conflictBoundIncFactor=1.5 initConflictBound=100 
+c VSIDS like heuristics from MiniSAT using a heap lightweight component caching from RSAT taking into account the objective function
+c Expensive reason simplification
+c Armin Biere (Picosat) restarts strategy
+c Glucose learned constraints deletion strategy
+c timeout=240s
+c DB Simplification allowed=false
+c --- End Solver configuration ---
+c solving ./data/paper/C168_FW_SZ_128.q.wcnf
+c reading problem ... 
+c starts		: 0
+c conflicts		: 0
+c decisions		: 0
+c propagations		: 0
+c inspects		: 0
+c shortcuts		: 0
+c learnt literals	: 0
+c learnt binary clauses	: 0
+c learnt ternary clauses	: 0
+c learnt constraints	: 0
+c ignored constraints	: 0
+c root simplifications	: 0
+c removed literals (reason simplification)	: 0
+c reason swapping (by a shorter reason)	: 0
+c Calls to reduceDB	: 0
+c number of reductions to clauses (during analyze)	: 0
+c number of learned constraints concerned by reduction	: 0
+c number of learning phase by resolution	: 0
+c number of learning phase by cutting planes	: 0
+c speed (assignments/second)	: 0.0
+c non guided choices	0
+c learnt constraints type 
+c constraints type 
+s UNKNOWN
+c Total wall clock time (in seconds): 0.0040

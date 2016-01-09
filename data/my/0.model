@@ -1,0 +1,60 @@
+c SAT4J: a SATisfiability library for Java (c) 2004-2008 Daniel Le Berre
+c This is free software under the dual EPL/GNU LGPL licenses.
+c See www.sat4j.org for details.
+c This software uses some libraries from the Jakarta Commons project. See jakarta.apache.org for details.
+c version 2.1.0.v20090520
+c sun.arch.data.model	32
+c java.version	1.6.0_17
+c os.name	Windows 7
+c os.version	6.1
+c os.arch	x86
+c Free memory 265400552
+c Max memory 532742144
+c Total memory 266403840
+c Number of processors 2
+c --- Begin Solver configuration ---
+c Stops conflict analysis at the first Unique Implication Point
+c org.sat4j.pb.constraints.CompetResolutionPBMixedHTClauseCardConstrDataStructure@128e20a
+c Learn all clauses as in MiniSAT
+c claDecay=0.999 varDecay=0.95 conflictBoundIncFactor=1.5 initConflictBound=100 
+c VSIDS like heuristics from MiniSAT using a heap phase appearing in latest learned clause taking into account the objective function
+c Expensive reason simplification
+c MiniSAT restarts strategy
+c Memory based learned constraints deletion strategy
+c timeout=120s
+c DB Simplification allowed=false
+c --- End Solver configuration ---
+c solving ./data/my\0.p.wcnf
+c reading problem ... 
+c ... done. Wall clock time 0.018s.
+c #vars     50
+c #constraints  21
+c constraints type 
+c org.sat4j.minisat.constraints.cnf.OriginalHTClause => 21
+c OPTIMIZING...
+c Got one! Elapsed wall clock time (in seconds):0.034
+o 2
+c starts		: 1
+c conflicts		: 3
+c decisions		: 23
+c propagations		: 81
+c inspects		: 88
+c learnt literals	: 0
+c learnt binary clauses	: 0
+c learnt ternary clauses	: 0
+c learnt clauses	: 3
+c ignored clauses	: 0
+c root simplifications	: 0
+c removed literals (reason simplification)	: 0
+c reason swapping (by a shorter reason)	: 0
+c Calls to reduceDB	: 0
+c speed (assignments/second)	: 40500.0
+c non guided choices	1
+c learnt constraints type 
+c constraints type 
+c org.sat4j.pb.constraints.pb.MaxWatchPb => 0
+c org.sat4j.minisat.constraints.cnf.OriginalHTClause => 21
+s OPTIMUM FOUND
+v -1 -2 3 4 -5 -6 7 8 9 10 11 -12 -13 -14 -15 -16 -17 -18 -19 -20 -21 -22 -23 -24 -25 -26 -27 -28 -29 0
+c objective function=2
+c Total wall clock time (in seconds): 0.04

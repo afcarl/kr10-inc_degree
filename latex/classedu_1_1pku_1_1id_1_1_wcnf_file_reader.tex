@@ -1,0 +1,189 @@
+\hypertarget{classedu_1_1pku_1_1id_1_1_wcnf_file_reader}{
+\section{edu.pku.id.WcnfFileReader Class Reference}
+\label{classedu_1_1pku_1_1id_1_1_wcnf_file_reader}\index{edu::pku::id::WcnfFileReader@{edu::pku::id::WcnfFileReader}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_aacb4b0504017a967d2d30cd9090b1aee}{WcnfFileReader} (String fileName)  throws FileNotFoundException 
+\item 
+\hyperlink{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_a232a715a8c8a9620a51000847f3eff33}{WcnfFileReader} (LineNumberReader reader)
+\item 
+List$<$ IVecInt $>$ \hyperlink{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_a53032e479f43c9d404e6f7a4b20c5e54}{parseInstance} ()  throws IOException, ParseFormatException 
+\item 
+int \hyperlink{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_a2252902985049c6ddfa0fac3ddc9ad09}{getNbOfVars} ()
+\item 
+List$<$ IVecInt $>$ \hyperlink{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_a74abc19fc0d4dfecb39b0d3435e0c4fe}{getClauses} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_a993c6cddf85a8b478953d5ba738b89a4}{readProblemLine} ()  throws IOException, ParseFormatException 
+\item 
+void \hyperlink{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_acbdb90450d02bb72edf9c905c3a7ebec}{readConstrs} ()  throws IOException, ParseFormatException 
+\item 
+boolean \hyperlink{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_a26ea542d17c9ff98329a36fc892726bc}{handleConstr} (String line, IVecInt literals)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final String \hyperlink{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_a7663ee8090173a9af8dd25e5a5450f38}{formatString} = \char`\"{}cnf\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Package Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_a8488ffe065c1cd2f90ce2bc4f3d9f473}{skipComments} ()  throws IOException 
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+LineNumberReader \hyperlink{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_a3182838f96a068bdbd4df989489d99ef}{in}
+\item 
+int \hyperlink{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_ac763d0289c26b167a37a0ee4a069ddd1}{expectedNbOfConstr}
+\item 
+int \hyperlink{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_a5ea7e3a588f1bc784840c8665fd08b88}{nbOfVars}
+\item 
+List$<$ IVecInt $>$ \hyperlink{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_aeaaed9fb9028bfc0ae5ff2bc1ef0bc79}{clauses}
+\item 
+int \hyperlink{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_a69dca8d66af7dedf837d4349175b5709}{realNbOfConstr} = 0
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_aeccac79bd794c028f166a9569aff9f8e}{addClause} (IVecInt literals)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_aacb4b0504017a967d2d30cd9090b1aee}{
+\index{edu::pku::id::WcnfFileReader@{edu::pku::id::WcnfFileReader}!WcnfFileReader@{WcnfFileReader}}
+\index{WcnfFileReader@{WcnfFileReader}!edu::pku::id::WcnfFileReader@{edu::pku::id::WcnfFileReader}}
+\subsubsection[{WcnfFileReader}]{\setlength{\rightskip}{0pt plus 5cm}edu.pku.id.WcnfFileReader.WcnfFileReader (
+\begin{DoxyParamCaption}
+\item[{String}]{ fileName}
+\end{DoxyParamCaption}
+)  throws FileNotFoundException }}
+\label{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_aacb4b0504017a967d2d30cd9090b1aee}
+\hypertarget{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_a232a715a8c8a9620a51000847f3eff33}{
+\index{edu::pku::id::WcnfFileReader@{edu::pku::id::WcnfFileReader}!WcnfFileReader@{WcnfFileReader}}
+\index{WcnfFileReader@{WcnfFileReader}!edu::pku::id::WcnfFileReader@{edu::pku::id::WcnfFileReader}}
+\subsubsection[{WcnfFileReader}]{\setlength{\rightskip}{0pt plus 5cm}edu.pku.id.WcnfFileReader.WcnfFileReader (
+\begin{DoxyParamCaption}
+\item[{LineNumberReader}]{ reader}
+\end{DoxyParamCaption}
+)}}
+\label{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_a232a715a8c8a9620a51000847f3eff33}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_aeccac79bd794c028f166a9569aff9f8e}{
+\index{edu::pku::id::WcnfFileReader@{edu::pku::id::WcnfFileReader}!addClause@{addClause}}
+\index{addClause@{addClause}!edu::pku::id::WcnfFileReader@{edu::pku::id::WcnfFileReader}}
+\subsubsection[{addClause}]{\setlength{\rightskip}{0pt plus 5cm}void edu.pku.id.WcnfFileReader.addClause (
+\begin{DoxyParamCaption}
+\item[{IVecInt}]{ literals}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_aeccac79bd794c028f166a9569aff9f8e}
+\hypertarget{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_a74abc19fc0d4dfecb39b0d3435e0c4fe}{
+\index{edu::pku::id::WcnfFileReader@{edu::pku::id::WcnfFileReader}!getClauses@{getClauses}}
+\index{getClauses@{getClauses}!edu::pku::id::WcnfFileReader@{edu::pku::id::WcnfFileReader}}
+\subsubsection[{getClauses}]{\setlength{\rightskip}{0pt plus 5cm}List$<$IVecInt$>$ edu.pku.id.WcnfFileReader.getClauses (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_a74abc19fc0d4dfecb39b0d3435e0c4fe}
+\hypertarget{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_a2252902985049c6ddfa0fac3ddc9ad09}{
+\index{edu::pku::id::WcnfFileReader@{edu::pku::id::WcnfFileReader}!getNbOfVars@{getNbOfVars}}
+\index{getNbOfVars@{getNbOfVars}!edu::pku::id::WcnfFileReader@{edu::pku::id::WcnfFileReader}}
+\subsubsection[{getNbOfVars}]{\setlength{\rightskip}{0pt plus 5cm}int edu.pku.id.WcnfFileReader.getNbOfVars (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_a2252902985049c6ddfa0fac3ddc9ad09}
+\hypertarget{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_a26ea542d17c9ff98329a36fc892726bc}{
+\index{edu::pku::id::WcnfFileReader@{edu::pku::id::WcnfFileReader}!handleConstr@{handleConstr}}
+\index{handleConstr@{handleConstr}!edu::pku::id::WcnfFileReader@{edu::pku::id::WcnfFileReader}}
+\subsubsection[{handleConstr}]{\setlength{\rightskip}{0pt plus 5cm}boolean edu.pku.id.WcnfFileReader.handleConstr (
+\begin{DoxyParamCaption}
+\item[{String}]{ line, }
+\item[{IVecInt}]{ literals}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_a26ea542d17c9ff98329a36fc892726bc}
+\hypertarget{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_a53032e479f43c9d404e6f7a4b20c5e54}{
+\index{edu::pku::id::WcnfFileReader@{edu::pku::id::WcnfFileReader}!parseInstance@{parseInstance}}
+\index{parseInstance@{parseInstance}!edu::pku::id::WcnfFileReader@{edu::pku::id::WcnfFileReader}}
+\subsubsection[{parseInstance}]{\setlength{\rightskip}{0pt plus 5cm}List$<$IVecInt$>$ edu.pku.id.WcnfFileReader.parseInstance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)  throws IOException, ParseFormatException }}
+\label{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_a53032e479f43c9d404e6f7a4b20c5e54}
+\hypertarget{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_acbdb90450d02bb72edf9c905c3a7ebec}{
+\index{edu::pku::id::WcnfFileReader@{edu::pku::id::WcnfFileReader}!readConstrs@{readConstrs}}
+\index{readConstrs@{readConstrs}!edu::pku::id::WcnfFileReader@{edu::pku::id::WcnfFileReader}}
+\subsubsection[{readConstrs}]{\setlength{\rightskip}{0pt plus 5cm}void edu.pku.id.WcnfFileReader.readConstrs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)  throws IOException, ParseFormatException \hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_acbdb90450d02bb72edf9c905c3a7ebec}
+\hypertarget{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_a993c6cddf85a8b478953d5ba738b89a4}{
+\index{edu::pku::id::WcnfFileReader@{edu::pku::id::WcnfFileReader}!readProblemLine@{readProblemLine}}
+\index{readProblemLine@{readProblemLine}!edu::pku::id::WcnfFileReader@{edu::pku::id::WcnfFileReader}}
+\subsubsection[{readProblemLine}]{\setlength{\rightskip}{0pt plus 5cm}void edu.pku.id.WcnfFileReader.readProblemLine (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)  throws IOException, ParseFormatException \hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_a993c6cddf85a8b478953d5ba738b89a4}
+\hypertarget{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_a8488ffe065c1cd2f90ce2bc4f3d9f473}{
+\index{edu::pku::id::WcnfFileReader@{edu::pku::id::WcnfFileReader}!skipComments@{skipComments}}
+\index{skipComments@{skipComments}!edu::pku::id::WcnfFileReader@{edu::pku::id::WcnfFileReader}}
+\subsubsection[{skipComments}]{\setlength{\rightskip}{0pt plus 5cm}void edu.pku.id.WcnfFileReader.skipComments (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)  throws IOException \hspace{0.3cm}{\ttfamily  \mbox{[}package\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_a8488ffe065c1cd2f90ce2bc4f3d9f473}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_aeaaed9fb9028bfc0ae5ff2bc1ef0bc79}{
+\index{edu::pku::id::WcnfFileReader@{edu::pku::id::WcnfFileReader}!clauses@{clauses}}
+\index{clauses@{clauses}!edu::pku::id::WcnfFileReader@{edu::pku::id::WcnfFileReader}}
+\subsubsection[{clauses}]{\setlength{\rightskip}{0pt plus 5cm}List$<$IVecInt$>$ {\bf edu.pku.id.WcnfFileReader.clauses}\hspace{0.3cm}{\ttfamily  \mbox{[}package\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_aeaaed9fb9028bfc0ae5ff2bc1ef0bc79}
+\hypertarget{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_ac763d0289c26b167a37a0ee4a069ddd1}{
+\index{edu::pku::id::WcnfFileReader@{edu::pku::id::WcnfFileReader}!expectedNbOfConstr@{expectedNbOfConstr}}
+\index{expectedNbOfConstr@{expectedNbOfConstr}!edu::pku::id::WcnfFileReader@{edu::pku::id::WcnfFileReader}}
+\subsubsection[{expectedNbOfConstr}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf edu.pku.id.WcnfFileReader.expectedNbOfConstr}\hspace{0.3cm}{\ttfamily  \mbox{[}package\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_ac763d0289c26b167a37a0ee4a069ddd1}
+\hypertarget{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_a7663ee8090173a9af8dd25e5a5450f38}{
+\index{edu::pku::id::WcnfFileReader@{edu::pku::id::WcnfFileReader}!formatString@{formatString}}
+\index{formatString@{formatString}!edu::pku::id::WcnfFileReader@{edu::pku::id::WcnfFileReader}}
+\subsubsection[{formatString}]{\setlength{\rightskip}{0pt plus 5cm}final String {\bf edu.pku.id.WcnfFileReader.formatString} = \char`\"{}cnf\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_a7663ee8090173a9af8dd25e5a5450f38}
+\hypertarget{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_a3182838f96a068bdbd4df989489d99ef}{
+\index{edu::pku::id::WcnfFileReader@{edu::pku::id::WcnfFileReader}!in@{in}}
+\index{in@{in}!edu::pku::id::WcnfFileReader@{edu::pku::id::WcnfFileReader}}
+\subsubsection[{in}]{\setlength{\rightskip}{0pt plus 5cm}LineNumberReader {\bf edu.pku.id.WcnfFileReader.in}\hspace{0.3cm}{\ttfamily  \mbox{[}package\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_a3182838f96a068bdbd4df989489d99ef}
+\hypertarget{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_a5ea7e3a588f1bc784840c8665fd08b88}{
+\index{edu::pku::id::WcnfFileReader@{edu::pku::id::WcnfFileReader}!nbOfVars@{nbOfVars}}
+\index{nbOfVars@{nbOfVars}!edu::pku::id::WcnfFileReader@{edu::pku::id::WcnfFileReader}}
+\subsubsection[{nbOfVars}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf edu.pku.id.WcnfFileReader.nbOfVars}\hspace{0.3cm}{\ttfamily  \mbox{[}package\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_a5ea7e3a588f1bc784840c8665fd08b88}
+\hypertarget{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_a69dca8d66af7dedf837d4349175b5709}{
+\index{edu::pku::id::WcnfFileReader@{edu::pku::id::WcnfFileReader}!realNbOfConstr@{realNbOfConstr}}
+\index{realNbOfConstr@{realNbOfConstr}!edu::pku::id::WcnfFileReader@{edu::pku::id::WcnfFileReader}}
+\subsubsection[{realNbOfConstr}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf edu.pku.id.WcnfFileReader.realNbOfConstr} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}package\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_wcnf_file_reader_a69dca8d66af7dedf837d4349175b5709}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+src/edu/pku/id/\hyperlink{_wcnf_file_reader_8java}{WcnfFileReader.java}\end{DoxyCompactItemize}

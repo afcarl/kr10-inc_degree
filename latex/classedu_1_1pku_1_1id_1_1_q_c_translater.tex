@@ -1,0 +1,132 @@
+\hypertarget{classedu_1_1pku_1_1id_1_1_q_c_translater}{
+\section{edu.pku.id.QCTranslater Class Reference}
+\label{classedu_1_1pku_1_1id_1_1_q_c_translater}\index{edu::pku::id::QCTranslater@{edu::pku::id::QCTranslater}}
+}
+Inheritance diagram for edu.pku.id.QCTranslater:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classedu_1_1pku_1_1id_1_1_q_c_translater}
+\end{center}
+\end{figure}
+\subsection*{Package Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classedu_1_1pku_1_1id_1_1_q_c_translater_aa8bd352645be8437d8feda2f04aff560}{literalPositiveTransform} (int literal)
+\item 
+int \hyperlink{classedu_1_1pku_1_1id_1_1_q_c_translater_a9439713e9f21664274a144214507c17b}{literalNegativeTransform} (int literal)
+\item 
+void \hyperlink{classedu_1_1pku_1_1id_1_1_q_c_translater_a2b3b851d0bcb6cbfc07badd6e6434096}{translate} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classedu_1_1pku_1_1id_1_1_q_c_translater_ab609761f32dc4ff41071cd17a5152798}{clauseIndex} = 0
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ IVecInt $>$ \hyperlink{classedu_1_1pku_1_1id_1_1_q_c_translater_ab5f9bf3cb3a91a4b74ca8a8580468305}{translateClause} (IVecInt clause)
+\item 
+int \hyperlink{classedu_1_1pku_1_1id_1_1_q_c_translater_a09e237ebaa40f125c9eefbab1a6a567e}{z} (int index)
+\item 
+int \hyperlink{classedu_1_1pku_1_1id_1_1_q_c_translater_a608a6c46bf90a6a1edb5fd832e4e0806}{y} (int literal)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classedu_1_1pku_1_1id_1_1_q_c_translater_a9439713e9f21664274a144214507c17b}{
+\index{edu::pku::id::QCTranslater@{edu::pku::id::QCTranslater}!literalNegativeTransform@{literalNegativeTransform}}
+\index{literalNegativeTransform@{literalNegativeTransform}!edu::pku::id::QCTranslater@{edu::pku::id::QCTranslater}}
+\subsubsection[{literalNegativeTransform}]{\setlength{\rightskip}{0pt plus 5cm}int edu.pku.id.QCTranslater.literalNegativeTransform (
+\begin{DoxyParamCaption}
+\item[{int}]{ literal}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}package\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_q_c_translater_a9439713e9f21664274a144214507c17b}
+l -\/$>$ -\/l a -\/$>$ -\/a  a -\/$>$ +a \hypertarget{classedu_1_1pku_1_1id_1_1_q_c_translater_aa8bd352645be8437d8feda2f04aff560}{
+\index{edu::pku::id::QCTranslater@{edu::pku::id::QCTranslater}!literalPositiveTransform@{literalPositiveTransform}}
+\index{literalPositiveTransform@{literalPositiveTransform}!edu::pku::id::QCTranslater@{edu::pku::id::QCTranslater}}
+\subsubsection[{literalPositiveTransform}]{\setlength{\rightskip}{0pt plus 5cm}int edu.pku.id.QCTranslater.literalPositiveTransform (
+\begin{DoxyParamCaption}
+\item[{int}]{ literal}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}package\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_q_c_translater_aa8bd352645be8437d8feda2f04aff560}
+姝ｅ師瀛恆鐨勭紪鐮佸鏋滄槸x\par
+ +a鐨勭紪鐮佷负4x\par
+ -\/a鐨勭紪鐮佷负4x+1\par
+
+
+l -\/$>$ +l\par
+ a -\/$>$ +a\par
+  a -\/$>$ -\/a\par
+ \hypertarget{classedu_1_1pku_1_1id_1_1_q_c_translater_a2b3b851d0bcb6cbfc07badd6e6434096}{
+\index{edu::pku::id::QCTranslater@{edu::pku::id::QCTranslater}!translate@{translate}}
+\index{translate@{translate}!edu::pku::id::QCTranslater@{edu::pku::id::QCTranslater}}
+\subsubsection[{translate}]{\setlength{\rightskip}{0pt plus 5cm}void edu.pku.id.QCTranslater.translate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}package, virtual\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_q_c_translater_a2b3b851d0bcb6cbfc07badd6e6434096}
+
+
+Implements \hyperlink{classedu_1_1pku_1_1id_1_1_multi_valued_translater_a57e687a8b1c011fb7c0ccbd72272e328}{edu.pku.id.MultiValuedTranslater}.
+
+\hypertarget{classedu_1_1pku_1_1id_1_1_q_c_translater_ab5f9bf3cb3a91a4b74ca8a8580468305}{
+\index{edu::pku::id::QCTranslater@{edu::pku::id::QCTranslater}!translateClause@{translateClause}}
+\index{translateClause@{translateClause}!edu::pku::id::QCTranslater@{edu::pku::id::QCTranslater}}
+\subsubsection[{translateClause}]{\setlength{\rightskip}{0pt plus 5cm}List$<$IVecInt$>$ edu.pku.id.QCTranslater.translateClause (
+\begin{DoxyParamCaption}
+\item[{IVecInt}]{ clause}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_q_c_translater_ab5f9bf3cb3a91a4b74ca8a8580468305}
+灏嗕竴涓瓙鍙ヨ繘琛屽己鍙樻崲\par
+ 绠楁硶濡備笅:\par
+ S(l\_\-1   l\_\-n) = \{i=1\}$^\wedge$n(+l\_\-i  -\/ l\_\-i)  \{i=1\}$^\wedge$n(+l\_\-i -\/l\_\-i)\par
+ 寮曞叆鏂板彉閲�鏉ラ伩鍏嶅彉鎹㈠悗鐨勯暱搴﹀彂鐢熸寚鏁扮垎鐐�br/$>$ y\_\-i $<$-\/ +l\_\-i  -\/ l\_\-i, i = 1, , n\par
+ z $<$-\/ \{i=1\}$^\wedge$n(+l\_\-i -\/l\_\-i)\par
+ 杩欐牱鍦ㄤ繚鎸佸彲婊¤冻鎬т笅,鍙互鍙樻崲涓�br/$>$ (\{i=1\}$^\wedge$n y\_\-i  z)  \{i=1\}$^\wedge$n( y\_\-i  +l\_\-i)  \{i=1\}$^\wedge$n( y\_\-i   -\/l\_\-i) \{i=1\}$^\wedge$n( z  +l\_\-i)  \{i=1\}$^\wedge$n( z  -\/ l\_\-i)
+
+淇濊瘉鍙弧瓒虫�鐨勫彉鎹腑寮曞叆鐨�y\_\-i = +l\_\-i   -\/ l\_\-i鐨勭紪鐮佷负4x+2 寮曞叆鐨剒 = \{i=1\}$^\wedge$n (+l\_\-i  -\/l\_\-i) 鐨勭紪鐮佷负3
+
+
+\begin{DoxyParams}{Parameters}
+{\em clause} & 瑕佸彉鎹㈢殑瀛愬彞 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+寮哄彉鎹㈢殑缁撴灉 
+\end{DoxyReturn}
+\hypertarget{classedu_1_1pku_1_1id_1_1_q_c_translater_a608a6c46bf90a6a1edb5fd832e4e0806}{
+\index{edu::pku::id::QCTranslater@{edu::pku::id::QCTranslater}!y@{y}}
+\index{y@{y}!edu::pku::id::QCTranslater@{edu::pku::id::QCTranslater}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}int edu.pku.id.QCTranslater.y (
+\begin{DoxyParamCaption}
+\item[{int}]{ literal}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_q_c_translater_a608a6c46bf90a6a1edb5fd832e4e0806}
+\hypertarget{classedu_1_1pku_1_1id_1_1_q_c_translater_a09e237ebaa40f125c9eefbab1a6a567e}{
+\index{edu::pku::id::QCTranslater@{edu::pku::id::QCTranslater}!z@{z}}
+\index{z@{z}!edu::pku::id::QCTranslater@{edu::pku::id::QCTranslater}}
+\subsubsection[{z}]{\setlength{\rightskip}{0pt plus 5cm}int edu.pku.id.QCTranslater.z (
+\begin{DoxyParamCaption}
+\item[{int}]{ index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_q_c_translater_a09e237ebaa40f125c9eefbab1a6a567e}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classedu_1_1pku_1_1id_1_1_q_c_translater_ab609761f32dc4ff41071cd17a5152798}{
+\index{edu::pku::id::QCTranslater@{edu::pku::id::QCTranslater}!clauseIndex@{clauseIndex}}
+\index{clauseIndex@{clauseIndex}!edu::pku::id::QCTranslater@{edu::pku::id::QCTranslater}}
+\subsubsection[{clauseIndex}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf edu.pku.id.QCTranslater.clauseIndex} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}package\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_q_c_translater_ab609761f32dc4ff41071cd17a5152798}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+src/edu/pku/id/\hyperlink{_q_c_translater_8java}{QCTranslater.java}\end{DoxyCompactItemize}

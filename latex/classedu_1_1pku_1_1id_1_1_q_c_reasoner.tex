@@ -1,0 +1,252 @@
+\hypertarget{classedu_1_1pku_1_1id_1_1_q_c_reasoner}{
+\section{edu.pku.id.QCReasoner Class Reference}
+\label{classedu_1_1pku_1_1id_1_1_q_c_reasoner}\index{edu::pku::id::QCReasoner@{edu::pku::id::QCReasoner}}
+}
+Inheritance diagram for edu.pku.id.QCReasoner:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classedu_1_1pku_1_1id_1_1_q_c_reasoner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \hyperlink{classedu_1_1pku_1_1id_1_1_q_c_reasoner_a0ce01daedfae2f88548978205d4848db}{qcEntails} (List$<$ IVecInt $>$ kb, IVecInt consequence)
+\item 
+boolean \hyperlink{classedu_1_1pku_1_1id_1_1_q_c_reasoner_a98bdf18d6a8222310060877e6cff6d80}{isQcModel} (List$<$ IVecInt $>$ kb, List$<$ \hyperlink{namespaceedu_1_1pku_1_1id_a01cdd35063021f272bd905de5f43f634}{TruthValue} $>$ model)
+\item 
+boolean \hyperlink{classedu_1_1pku_1_1id_1_1_q_c_reasoner_a63fc892ce36a74721446c691c60cdbd1}{isQcModel} (IVecInt clause, List$<$ \hyperlink{namespaceedu_1_1pku_1_1id_a01cdd35063021f272bd905de5f43f634}{TruthValue} $>$ interpretation)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ IVecInt $>$ \hyperlink{classedu_1_1pku_1_1id_1_1_q_c_reasoner_a11930b7f5e8427253338a98508fb1072}{strong} (List$<$ IVecInt $>$ clauses)
+\item 
+List$<$ IVecInt $>$ \hyperlink{classedu_1_1pku_1_1id_1_1_q_c_reasoner_ad841248cfd8f06335268248973876c17}{strong} (IVecInt clause)
+\item 
+List$<$ IVecInt $>$ \hyperlink{classedu_1_1pku_1_1id_1_1_q_c_reasoner_a52b070b2beb0989d50be56bb9d4864f0}{negWeak} (IVecInt clause)
+\item 
+int \hyperlink{classedu_1_1pku_1_1id_1_1_q_c_reasoner_a9dd63d2e49f6f5b53c4da1f74886708f}{literalPositiveTransform} (int literal)
+\item 
+int \hyperlink{classedu_1_1pku_1_1id_1_1_q_c_reasoner_aa2ab8c28775a0f950ea4932f056cc68e}{literalNegativeTransform} (int literal)
+\item 
+boolean \hyperlink{classedu_1_1pku_1_1id_1_1_q_c_reasoner_a96555b78c68cdc49f34d27ce44cdfdc1}{areClausesSatisfiable} (List$<$ IVecInt $>$ clauses)
+\item 
+List$<$ Boolean $>$ \hyperlink{classedu_1_1pku_1_1id_1_1_q_c_reasoner_aec484fe6e1aeaae5ba59f45da88a9f87}{asClassicModel} (List$<$ \hyperlink{namespaceedu_1_1pku_1_1id_a01cdd35063021f272bd905de5f43f634}{TruthValue} $>$ model)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \hyperlink{classedu_1_1pku_1_1id_1_1_q_c_reasoner_af0acf65658bdcdc6c8c4dc45652a85a9}{Z} = 3
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Quasi Classical Logic Reasoner 准经典逻辑推理机 \par
+ 算法基于文献 Marquis, P., and Porquet, N. 2001. Computational aspects of quasi-\/classical entailment. {\itshape Journal of Applied Non-\/classical Logics\/} 11:295-\/312. \par
+ 同时使用了用引入新变量来避免变成CNF范式时的公式长度的指数膨胀的技巧 
+
+\subsection{Member Function Documentation}
+\hypertarget{classedu_1_1pku_1_1id_1_1_q_c_reasoner_a96555b78c68cdc49f34d27ce44cdfdc1}{
+\index{edu::pku::id::QCReasoner@{edu::pku::id::QCReasoner}!areClausesSatisfiable@{areClausesSatisfiable}}
+\index{areClausesSatisfiable@{areClausesSatisfiable}!edu::pku::id::QCReasoner@{edu::pku::id::QCReasoner}}
+\subsubsection[{areClausesSatisfiable}]{\setlength{\rightskip}{0pt plus 5cm}boolean edu.pku.id.QCReasoner.areClausesSatisfiable (
+\begin{DoxyParamCaption}
+\item[{List$<$ IVecInt $>$}]{ clauses}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_q_c_reasoner_a96555b78c68cdc49f34d27ce44cdfdc1}
+使用SAT4J推理机来检查子句集clauses的可满足性
+
+
+\begin{DoxyParams}{Parameters}
+{\em clauses} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+子句集clauses的可满足性 
+\end{DoxyReturn}
+\hypertarget{classedu_1_1pku_1_1id_1_1_q_c_reasoner_aec484fe6e1aeaae5ba59f45da88a9f87}{
+\index{edu::pku::id::QCReasoner@{edu::pku::id::QCReasoner}!asClassicModel@{asClassicModel}}
+\index{asClassicModel@{asClassicModel}!edu::pku::id::QCReasoner@{edu::pku::id::QCReasoner}}
+\subsubsection[{asClassicModel}]{\setlength{\rightskip}{0pt plus 5cm}List$<$Boolean$>$ edu.pku.id.QCReasoner.asClassicModel (
+\begin{DoxyParamCaption}
+\item[{List$<$ {\bf TruthValue} $>$}]{ model}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_q_c_reasoner_aec484fe6e1aeaae5ba59f45da88a9f87}
+
+\begin{DoxyParams}{Parameters}
+{\em model} & a QC interpretation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a classical model 
+\begin{DoxyItemize}
+\item B -\/$>$ (t,t) 
+\item t -\/$>$ (t,f) 
+\item f -\/$>$ (f,t) 
+\item N -\/$>$ (N,f) 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\hypertarget{classedu_1_1pku_1_1id_1_1_q_c_reasoner_a98bdf18d6a8222310060877e6cff6d80}{
+\index{edu::pku::id::QCReasoner@{edu::pku::id::QCReasoner}!isQcModel@{isQcModel}}
+\index{isQcModel@{isQcModel}!edu::pku::id::QCReasoner@{edu::pku::id::QCReasoner}}
+\subsubsection[{isQcModel}]{\setlength{\rightskip}{0pt plus 5cm}boolean edu.pku.id.QCReasoner.isQcModel (
+\begin{DoxyParamCaption}
+\item[{List$<$ IVecInt $>$}]{ kb, }
+\item[{List$<$ {\bf TruthValue} $>$}]{ model}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_q_c_reasoner_a98bdf18d6a8222310060877e6cff6d80}
+
+
+Implements \hyperlink{interfaceedu_1_1pku_1_1id_1_1_i_q_c_reasoner_a4d1172287213bd0be63dbd75f047aa7c}{edu.pku.id.IQCReasoner}.
+
+\hypertarget{classedu_1_1pku_1_1id_1_1_q_c_reasoner_a63fc892ce36a74721446c691c60cdbd1}{
+\index{edu::pku::id::QCReasoner@{edu::pku::id::QCReasoner}!isQcModel@{isQcModel}}
+\index{isQcModel@{isQcModel}!edu::pku::id::QCReasoner@{edu::pku::id::QCReasoner}}
+\subsubsection[{isQcModel}]{\setlength{\rightskip}{0pt plus 5cm}boolean edu.pku.id.QCReasoner.isQcModel (
+\begin{DoxyParamCaption}
+\item[{IVecInt}]{ clause, }
+\item[{List$<$ {\bf TruthValue} $>$}]{ interpretation}
+\end{DoxyParamCaption}
+)}}
+\label{classedu_1_1pku_1_1id_1_1_q_c_reasoner_a63fc892ce36a74721446c691c60cdbd1}
+
+\begin{DoxyParams}{Parameters}
+{\em clause} & \\
+\hline
+{\em interpretation} & I $|$-\/Q l\_\-1   l\_\-n if I $|$-\/  (+l\_\-i   -\/l\_\-i)  ( +l\_\-i  -\/l\_\-i)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether {\ttfamily interpretation} is a QC model of {\ttfamily clause} 
+\end{DoxyReturn}
+\hypertarget{classedu_1_1pku_1_1id_1_1_q_c_reasoner_aa2ab8c28775a0f950ea4932f056cc68e}{
+\index{edu::pku::id::QCReasoner@{edu::pku::id::QCReasoner}!literalNegativeTransform@{literalNegativeTransform}}
+\index{literalNegativeTransform@{literalNegativeTransform}!edu::pku::id::QCReasoner@{edu::pku::id::QCReasoner}}
+\subsubsection[{literalNegativeTransform}]{\setlength{\rightskip}{0pt plus 5cm}int edu.pku.id.QCReasoner.literalNegativeTransform (
+\begin{DoxyParamCaption}
+\item[{int}]{ literal}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_q_c_reasoner_aa2ab8c28775a0f950ea4932f056cc68e}
+l -\/$>$ -\/l a -\/$>$ -\/a  a -\/$>$ +a \hypertarget{classedu_1_1pku_1_1id_1_1_q_c_reasoner_a9dd63d2e49f6f5b53c4da1f74886708f}{
+\index{edu::pku::id::QCReasoner@{edu::pku::id::QCReasoner}!literalPositiveTransform@{literalPositiveTransform}}
+\index{literalPositiveTransform@{literalPositiveTransform}!edu::pku::id::QCReasoner@{edu::pku::id::QCReasoner}}
+\subsubsection[{literalPositiveTransform}]{\setlength{\rightskip}{0pt plus 5cm}int edu.pku.id.QCReasoner.literalPositiveTransform (
+\begin{DoxyParamCaption}
+\item[{int}]{ literal}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_q_c_reasoner_a9dd63d2e49f6f5b53c4da1f74886708f}
+正原子a的编码如果是x +a的编码为4x -\/a的编码为4x+1
+
+l -\/$>$ +l a -\/$>$ +a  a -\/$>$ -\/a \hypertarget{classedu_1_1pku_1_1id_1_1_q_c_reasoner_a52b070b2beb0989d50be56bb9d4864f0}{
+\index{edu::pku::id::QCReasoner@{edu::pku::id::QCReasoner}!negWeak@{negWeak}}
+\index{negWeak@{negWeak}!edu::pku::id::QCReasoner@{edu::pku::id::QCReasoner}}
+\subsubsection[{negWeak}]{\setlength{\rightskip}{0pt plus 5cm}List$<$IVecInt$>$ edu.pku.id.QCReasoner.negWeak (
+\begin{DoxyParamCaption}
+\item[{IVecInt}]{ clause}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_q_c_reasoner_a52b070b2beb0989d50be56bb9d4864f0}
+弱变换\par
+ W(l\_\-1, , l\_\-n) = \{i=1\}$^\wedge$n +l\_\-i \par
+ 然后将其取反,由De Morgan律,变换为n个子句  +l\_\-i, i = 1, .. ,n
+
+
+\begin{DoxyParams}{Parameters}
+{\em clause} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+弱变换的结果 
+\end{DoxyReturn}
+\hypertarget{classedu_1_1pku_1_1id_1_1_q_c_reasoner_a0ce01daedfae2f88548978205d4848db}{
+\index{edu::pku::id::QCReasoner@{edu::pku::id::QCReasoner}!qcEntails@{qcEntails}}
+\index{qcEntails@{qcEntails}!edu::pku::id::QCReasoner@{edu::pku::id::QCReasoner}}
+\subsubsection[{qcEntails}]{\setlength{\rightskip}{0pt plus 5cm}boolean edu.pku.id.QCReasoner.qcEntails (
+\begin{DoxyParamCaption}
+\item[{List$<$ IVecInt $>$}]{ kb, }
+\item[{IVecInt}]{ consequence}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_q_c_reasoner_a0ce01daedfae2f88548978205d4848db}
+检测kb是否能够QC蕴含gamma
+
+
+\begin{DoxyParams}{Parameters}
+{\em kb} & 前提知识库,表示为子句的集合 \\
+\hline
+{\em consequence} & 结论,表示为子句 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+是否能够QC蕴含 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfaceedu_1_1pku_1_1id_1_1_i_q_c_reasoner_a2cf3cc08877e6d06485e758bdbf5bf94}{edu.pku.id.IQCReasoner}.
+
+\hypertarget{classedu_1_1pku_1_1id_1_1_q_c_reasoner_ad841248cfd8f06335268248973876c17}{
+\index{edu::pku::id::QCReasoner@{edu::pku::id::QCReasoner}!strong@{strong}}
+\index{strong@{strong}!edu::pku::id::QCReasoner@{edu::pku::id::QCReasoner}}
+\subsubsection[{strong}]{\setlength{\rightskip}{0pt plus 5cm}List$<$IVecInt$>$ edu.pku.id.QCReasoner.strong (
+\begin{DoxyParamCaption}
+\item[{IVecInt}]{ clause}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_q_c_reasoner_ad841248cfd8f06335268248973876c17}
+将一个子句进行强变换\par
+ 算法如下:\par
+ S(l\_\-1   l\_\-n) = \{i=1\}$^\wedge$n(+l\_\-i  -\/ l\_\-i)  \{i=1\}$^\wedge$n(+l\_\-i -\/l\_\-i)\par
+ 引入新变量,来避免变换后的长度发生指数爆炸\par
+ y\_\-i $<$-\/ +l\_\-i  -\/ l\_\-i, i = 1, , n\par
+ z $<$-\/ \{i=1\}$^\wedge$n(+l\_\-i -\/l\_\-i)\par
+ 这样在保持可满足性下,可以变换为\par
+ (\{i=1\}$^\wedge$n y\_\-i  z)  \{i=1\}$^\wedge$n( y\_\-i  +l\_\-i)  \{i=1\}$^\wedge$n( y\_\-i   -\/l\_\-i) \{i=1\}$^\wedge$n( z  +l\_\-i)  \{i=1\}$^\wedge$n( z  -\/ l\_\-i)
+
+保证可满足性的变换中引入的 y\_\-i = +l\_\-i   -\/ l\_\-i的编码为4x+2 引入的z = \{i=1\}$^\wedge$n (+l\_\-i  -\/l\_\-i) 的编码为3
+
+
+\begin{DoxyParams}{Parameters}
+{\em clause} & 要变换的子句 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+强变换的结果 
+\end{DoxyReturn}
+\hypertarget{classedu_1_1pku_1_1id_1_1_q_c_reasoner_a11930b7f5e8427253338a98508fb1072}{
+\index{edu::pku::id::QCReasoner@{edu::pku::id::QCReasoner}!strong@{strong}}
+\index{strong@{strong}!edu::pku::id::QCReasoner@{edu::pku::id::QCReasoner}}
+\subsubsection[{strong}]{\setlength{\rightskip}{0pt plus 5cm}List$<$IVecInt$>$ edu.pku.id.QCReasoner.strong (
+\begin{DoxyParamCaption}
+\item[{List$<$ IVecInt $>$}]{ clauses}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_q_c_reasoner_a11930b7f5e8427253338a98508fb1072}
+将一个子句集进行强变换 S() = \{clause  in \} S()
+
+
+\begin{DoxyParams}{Parameters}
+{\em clauses} & 子句集 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+强变换的结果 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classedu_1_1pku_1_1id_1_1_q_c_reasoner_af0acf65658bdcdc6c8c4dc45652a85a9}{
+\index{edu::pku::id::QCReasoner@{edu::pku::id::QCReasoner}!Z@{Z}}
+\index{Z@{Z}!edu::pku::id::QCReasoner@{edu::pku::id::QCReasoner}}
+\subsubsection[{Z}]{\setlength{\rightskip}{0pt plus 5cm}final int {\bf edu.pku.id.QCReasoner.Z} = 3\hspace{0.3cm}{\ttfamily  \mbox{[}static, private\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1_q_c_reasoner_af0acf65658bdcdc6c8c4dc45652a85a9}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+src/edu/pku/id/\hyperlink{_q_c_reasoner_8java}{QCReasoner.java}\end{DoxyCompactItemize}

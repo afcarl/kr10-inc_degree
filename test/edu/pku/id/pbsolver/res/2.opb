@@ -1,0 +1,27 @@
+* #variable= 15 #constraint= 21
+*
+* linearized version of the factorization problem (P*Q=35)
+* this linearization can be automatically done by the parsers we provide
+min: +1 x1 +2 x2 +4 x3;
++1 x1 +2 x2 +4 x3 >= 2;
++1 x4 +2 x5 +4 x6 >= 2;
++1 x7 +2 x8 +4 x9 +2 x10 +4 x11 +8 x12 +4 x13 +8 x14 +16 x15 = 35;
+* new variables introduced to represent the products
++1 x7 -1 x1 -1 x4 >= -1;
+-2 x7 +1 x1 +1 x4 >= 0;
++1 x8 -1 x1 -1 x5 >= -1;
+-2 x8 +1 x1 +1 x5 >= 0;
++1 x9 -1 x1 -1 x6 >= -1;
+-2 x9 +1 x1 +1 x6 >= 0;
++1 x10 -1 x2 -1 x4 >= -1;
+-2 x10 +1 x2 +1 x4 >= 0;
++1 x11 -1 x2 -1 x5 >= -1;
+-2 x11 +1 x2 +1 x5 >= 0;
++1 x12 -1 x2 -1 x6 >= -1;
+-2 x12 +1 x2 +1 x6 >= 0;
++1 x13 -1 x3 -1 x4 >= -1;
+-2 x13 +1 x3 +1 x4 >= 0;
++1 x14 -1 x3 -1 x5 >= -1;
+-2 x14 +1 x3 +1 x5 >= 0;
++1 x15 -1 x3 -1 x6 >= -1;
+-2 x15 +1 x3 +1 x6 >= 0;

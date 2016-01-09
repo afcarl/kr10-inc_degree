@@ -1,0 +1,167 @@
+\hypertarget{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c}{
+\section{edu.pku.id.mus.SAT2PBTranslater\_\-QC Class Reference}
+\label{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c}\index{edu::pku::id::mus::SAT2PBTranslater\_\-QC@{edu::pku::id::mus::SAT2PBTranslater\_\-QC}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \hyperlink{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_aac2f5db0396034961733e2d6868d0cdc}{translatCnfFile} (String cnffileName)  throws IOException,             ParseFormatException 
+\item 
+void \hyperlink{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_aa86f6753e627457a86e523c68276eb4a}{translateCnfFile} (String cnffileName, String opbFileName)  throws IOException, ParseFormatException 
+\item 
+void \hyperlink{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_af8b5565d9b8ae23a02159c5e50691c62}{setClauses} (List$<$ IVecInt $>$ \hyperlink{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_a3b2a0756c6d32ae774de4199a892e219}{clauses}, int \hyperlink{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_a7fe2d4c8a7d85ea657476012e0d321e4}{varsInSATCount})
+\item 
+String \hyperlink{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_a34166fe678934d5f8a44f7eeb1616cf1}{translate} ()
+\item 
+String \hyperlink{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_a5bbe9134de541d902d4b6c655e3c8000}{translateClause} (IVecInt clause)
+\item 
+int \hyperlink{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_a6e147c6bfbc29cf0ad171f9956f8c80c}{translateLiteral} (int lit)
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ IVecInt $>$ \hyperlink{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_a3b2a0756c6d32ae774de4199a892e219}{clauses}
+\item 
+int \hyperlink{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_a7fe2d4c8a7d85ea657476012e0d321e4}{varsInSATCount}
+\item 
+int \hyperlink{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_a8abe437a89e7531652de4e348dfd7f40}{varsInPBCount}
+\item 
+int \hyperlink{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_a2356d55231e76907d045df743f3e6d1a}{product}
+\item 
+int \hyperlink{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_a5b31ab15369776a832cf92570bebee16}{sizeproduct}
+\item 
+StringBuilder \hyperlink{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_abbe849be65a6af1449c761f72554b5f5}{pbProblemBuilder} = new StringBuilder()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \hyperlink{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_aecc21a323ca13cedf89bd9fba3d601f2}{getMeta} ()
+\item 
+String \hyperlink{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_a98c21a4df00476db05ddaa32fcf018b7}{getObject} ()
+\item 
+void \hyperlink{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_a249fbf39a451e9fbc3152aaa5e1bbfef}{calcProduct} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_a249fbf39a451e9fbc3152aaa5e1bbfef}{
+\index{edu::pku::id::mus::SAT2PBTranslater\_\-QC@{edu::pku::id::mus::SAT2PBTranslater\_\-QC}!calcProduct@{calcProduct}}
+\index{calcProduct@{calcProduct}!edu::pku::id::mus::SAT2PBTranslater_QC@{edu::pku::id::mus::SAT2PBTranslater\_\-QC}}
+\subsubsection[{calcProduct}]{\setlength{\rightskip}{0pt plus 5cm}void edu.pku.id.mus.SAT2PBTranslater\_\-QC.calcProduct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_a249fbf39a451e9fbc3152aaa5e1bbfef}
+\hypertarget{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_aecc21a323ca13cedf89bd9fba3d601f2}{
+\index{edu::pku::id::mus::SAT2PBTranslater\_\-QC@{edu::pku::id::mus::SAT2PBTranslater\_\-QC}!getMeta@{getMeta}}
+\index{getMeta@{getMeta}!edu::pku::id::mus::SAT2PBTranslater_QC@{edu::pku::id::mus::SAT2PBTranslater\_\-QC}}
+\subsubsection[{getMeta}]{\setlength{\rightskip}{0pt plus 5cm}String edu.pku.id.mus.SAT2PBTranslater\_\-QC.getMeta (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_aecc21a323ca13cedf89bd9fba3d601f2}
+\hypertarget{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_a98c21a4df00476db05ddaa32fcf018b7}{
+\index{edu::pku::id::mus::SAT2PBTranslater\_\-QC@{edu::pku::id::mus::SAT2PBTranslater\_\-QC}!getObject@{getObject}}
+\index{getObject@{getObject}!edu::pku::id::mus::SAT2PBTranslater_QC@{edu::pku::id::mus::SAT2PBTranslater\_\-QC}}
+\subsubsection[{getObject}]{\setlength{\rightskip}{0pt plus 5cm}String edu.pku.id.mus.SAT2PBTranslater\_\-QC.getObject (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_a98c21a4df00476db05ddaa32fcf018b7}
+\hypertarget{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_af8b5565d9b8ae23a02159c5e50691c62}{
+\index{edu::pku::id::mus::SAT2PBTranslater\_\-QC@{edu::pku::id::mus::SAT2PBTranslater\_\-QC}!setClauses@{setClauses}}
+\index{setClauses@{setClauses}!edu::pku::id::mus::SAT2PBTranslater_QC@{edu::pku::id::mus::SAT2PBTranslater\_\-QC}}
+\subsubsection[{setClauses}]{\setlength{\rightskip}{0pt plus 5cm}void edu.pku.id.mus.SAT2PBTranslater\_\-QC.setClauses (
+\begin{DoxyParamCaption}
+\item[{List$<$ IVecInt $>$}]{ clauses, }
+\item[{int}]{ varsInSATCount}
+\end{DoxyParamCaption}
+)}}
+\label{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_af8b5565d9b8ae23a02159c5e50691c62}
+\hypertarget{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_aac2f5db0396034961733e2d6868d0cdc}{
+\index{edu::pku::id::mus::SAT2PBTranslater\_\-QC@{edu::pku::id::mus::SAT2PBTranslater\_\-QC}!translatCnfFile@{translatCnfFile}}
+\index{translatCnfFile@{translatCnfFile}!edu::pku::id::mus::SAT2PBTranslater_QC@{edu::pku::id::mus::SAT2PBTranslater\_\-QC}}
+\subsubsection[{translatCnfFile}]{\setlength{\rightskip}{0pt plus 5cm}String edu.pku.id.mus.SAT2PBTranslater\_\-QC.translatCnfFile (
+\begin{DoxyParamCaption}
+\item[{String}]{ cnffileName}
+\end{DoxyParamCaption}
+)  throws IOException,             ParseFormatException }}
+\label{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_aac2f5db0396034961733e2d6868d0cdc}
+\hypertarget{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_a34166fe678934d5f8a44f7eeb1616cf1}{
+\index{edu::pku::id::mus::SAT2PBTranslater\_\-QC@{edu::pku::id::mus::SAT2PBTranslater\_\-QC}!translate@{translate}}
+\index{translate@{translate}!edu::pku::id::mus::SAT2PBTranslater_QC@{edu::pku::id::mus::SAT2PBTranslater\_\-QC}}
+\subsubsection[{translate}]{\setlength{\rightskip}{0pt plus 5cm}String edu.pku.id.mus.SAT2PBTranslater\_\-QC.translate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_a34166fe678934d5f8a44f7eeb1616cf1}
+\hypertarget{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_a5bbe9134de541d902d4b6c655e3c8000}{
+\index{edu::pku::id::mus::SAT2PBTranslater\_\-QC@{edu::pku::id::mus::SAT2PBTranslater\_\-QC}!translateClause@{translateClause}}
+\index{translateClause@{translateClause}!edu::pku::id::mus::SAT2PBTranslater_QC@{edu::pku::id::mus::SAT2PBTranslater\_\-QC}}
+\subsubsection[{translateClause}]{\setlength{\rightskip}{0pt plus 5cm}String edu.pku.id.mus.SAT2PBTranslater\_\-QC.translateClause (
+\begin{DoxyParamCaption}
+\item[{IVecInt}]{ clause}
+\end{DoxyParamCaption}
+)}}
+\label{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_a5bbe9134de541d902d4b6c655e3c8000}
+\hypertarget{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_aa86f6753e627457a86e523c68276eb4a}{
+\index{edu::pku::id::mus::SAT2PBTranslater\_\-QC@{edu::pku::id::mus::SAT2PBTranslater\_\-QC}!translateCnfFile@{translateCnfFile}}
+\index{translateCnfFile@{translateCnfFile}!edu::pku::id::mus::SAT2PBTranslater_QC@{edu::pku::id::mus::SAT2PBTranslater\_\-QC}}
+\subsubsection[{translateCnfFile}]{\setlength{\rightskip}{0pt plus 5cm}void edu.pku.id.mus.SAT2PBTranslater\_\-QC.translateCnfFile (
+\begin{DoxyParamCaption}
+\item[{String}]{ cnffileName, }
+\item[{String}]{ opbFileName}
+\end{DoxyParamCaption}
+)  throws IOException, ParseFormatException }}
+\label{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_aa86f6753e627457a86e523c68276eb4a}
+\hypertarget{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_a6e147c6bfbc29cf0ad171f9956f8c80c}{
+\index{edu::pku::id::mus::SAT2PBTranslater\_\-QC@{edu::pku::id::mus::SAT2PBTranslater\_\-QC}!translateLiteral@{translateLiteral}}
+\index{translateLiteral@{translateLiteral}!edu::pku::id::mus::SAT2PBTranslater_QC@{edu::pku::id::mus::SAT2PBTranslater\_\-QC}}
+\subsubsection[{translateLiteral}]{\setlength{\rightskip}{0pt plus 5cm}int edu.pku.id.mus.SAT2PBTranslater\_\-QC.translateLiteral (
+\begin{DoxyParamCaption}
+\item[{int}]{ lit}
+\end{DoxyParamCaption}
+)}}
+\label{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_a6e147c6bfbc29cf0ad171f9956f8c80c}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_a3b2a0756c6d32ae774de4199a892e219}{
+\index{edu::pku::id::mus::SAT2PBTranslater\_\-QC@{edu::pku::id::mus::SAT2PBTranslater\_\-QC}!clauses@{clauses}}
+\index{clauses@{clauses}!edu::pku::id::mus::SAT2PBTranslater_QC@{edu::pku::id::mus::SAT2PBTranslater\_\-QC}}
+\subsubsection[{clauses}]{\setlength{\rightskip}{0pt plus 5cm}List$<$IVecInt$>$ {\bf edu.pku.id.mus.SAT2PBTranslater\_\-QC.clauses}\hspace{0.3cm}{\ttfamily  \mbox{[}package\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_a3b2a0756c6d32ae774de4199a892e219}
+\hypertarget{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_abbe849be65a6af1449c761f72554b5f5}{
+\index{edu::pku::id::mus::SAT2PBTranslater\_\-QC@{edu::pku::id::mus::SAT2PBTranslater\_\-QC}!pbProblemBuilder@{pbProblemBuilder}}
+\index{pbProblemBuilder@{pbProblemBuilder}!edu::pku::id::mus::SAT2PBTranslater_QC@{edu::pku::id::mus::SAT2PBTranslater\_\-QC}}
+\subsubsection[{pbProblemBuilder}]{\setlength{\rightskip}{0pt plus 5cm}StringBuilder {\bf edu.pku.id.mus.SAT2PBTranslater\_\-QC.pbProblemBuilder} = new StringBuilder()\hspace{0.3cm}{\ttfamily  \mbox{[}package\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_abbe849be65a6af1449c761f72554b5f5}
+\hypertarget{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_a2356d55231e76907d045df743f3e6d1a}{
+\index{edu::pku::id::mus::SAT2PBTranslater\_\-QC@{edu::pku::id::mus::SAT2PBTranslater\_\-QC}!product@{product}}
+\index{product@{product}!edu::pku::id::mus::SAT2PBTranslater_QC@{edu::pku::id::mus::SAT2PBTranslater\_\-QC}}
+\subsubsection[{product}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf edu.pku.id.mus.SAT2PBTranslater\_\-QC.product}\hspace{0.3cm}{\ttfamily  \mbox{[}package\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_a2356d55231e76907d045df743f3e6d1a}
+\hypertarget{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_a5b31ab15369776a832cf92570bebee16}{
+\index{edu::pku::id::mus::SAT2PBTranslater\_\-QC@{edu::pku::id::mus::SAT2PBTranslater\_\-QC}!sizeproduct@{sizeproduct}}
+\index{sizeproduct@{sizeproduct}!edu::pku::id::mus::SAT2PBTranslater_QC@{edu::pku::id::mus::SAT2PBTranslater\_\-QC}}
+\subsubsection[{sizeproduct}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf edu.pku.id.mus.SAT2PBTranslater\_\-QC.sizeproduct}\hspace{0.3cm}{\ttfamily  \mbox{[}package\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_a5b31ab15369776a832cf92570bebee16}
+\hypertarget{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_a8abe437a89e7531652de4e348dfd7f40}{
+\index{edu::pku::id::mus::SAT2PBTranslater\_\-QC@{edu::pku::id::mus::SAT2PBTranslater\_\-QC}!varsInPBCount@{varsInPBCount}}
+\index{varsInPBCount@{varsInPBCount}!edu::pku::id::mus::SAT2PBTranslater_QC@{edu::pku::id::mus::SAT2PBTranslater\_\-QC}}
+\subsubsection[{varsInPBCount}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf edu.pku.id.mus.SAT2PBTranslater\_\-QC.varsInPBCount}\hspace{0.3cm}{\ttfamily  \mbox{[}package\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_a8abe437a89e7531652de4e348dfd7f40}
+\hypertarget{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_a7fe2d4c8a7d85ea657476012e0d321e4}{
+\index{edu::pku::id::mus::SAT2PBTranslater\_\-QC@{edu::pku::id::mus::SAT2PBTranslater\_\-QC}!varsInSATCount@{varsInSATCount}}
+\index{varsInSATCount@{varsInSATCount}!edu::pku::id::mus::SAT2PBTranslater_QC@{edu::pku::id::mus::SAT2PBTranslater\_\-QC}}
+\subsubsection[{varsInSATCount}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf edu.pku.id.mus.SAT2PBTranslater\_\-QC.varsInSATCount}\hspace{0.3cm}{\ttfamily  \mbox{[}package\mbox{]}}}}
+\label{classedu_1_1pku_1_1id_1_1mus_1_1_s_a_t2_p_b_translater___q_c_a7fe2d4c8a7d85ea657476012e0d321e4}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+src/edu/pku/id/mus/\hyperlink{_s_a_t2_p_b_translater___q_c_8java}{SAT2PBTranslater\_\-QC.java}\end{DoxyCompactItemize}

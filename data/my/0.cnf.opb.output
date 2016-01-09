@@ -1,0 +1,73 @@
+c SAT4J: a SATisfiability library for Java (c) 2004-2010 Daniel Le Berre
+c This is free software under the dual EPL/GNU LGPL licenses.
+c See www.sat4j.org for details.
+c version 2.2.2.v20101017
+c java.runtime.name	Java(TM) SE Runtime Environment
+c java.vm.name		Java HotSpot(TM) 64-Bit Server VM
+c java.vm.version	17.1-b03-307
+c java.vm.vendor	Apple Inc.
+c sun.arch.data.model	64
+c java.version		1.6.0_22
+c os.name		Mac OS X
+c os.version		10.6.6
+c os.arch		x86_64
+c Free memory 		82536792
+c Max memory 		129957888
+c Total memory 		85000192
+c Number of processors 	2
+c Pseudo Boolean Optimization
+c --- Begin Solver configuration ---
+c org.sat4j.pb.constraints.CompetResolutionPBMixedWLClauseCardConstrDataStructure@b34bed0
+c Learn all clauses as in MiniSAT
+c claDecay=0.999 varDecay=0.95 conflictBoundIncFactor=1.5 initConflictBound=100 
+c VSIDS like heuristics from MiniSAT using a heap lightweight component caching from RSAT taking into account the objective function
+c Expensive reason simplification
+c Armin Biere (Picosat) restarts strategy
+c Glucose learned constraints deletion strategy
+c timeout=2147483s
+c DB Simplification allowed=false
+c --- End Solver configuration ---
+c solving 0.cnf.opb
+c reading problem ... 
+c ... done. Wall clock time 0.016s.
+c #vars     15
+c #constraints  22
+c constraints type 
+c org.sat4j.minisat.constraints.cnf.OriginalWLClause => 10
+c org.sat4j.minisat.constraints.cnf.OriginalBinaryClause => 3
+c org.sat4j.pb.constraints.pb.MaxWatchPb => 9
+c SATISFIABLE
+c OPTIMIZING...
+c Got one! Elapsed wall clock time (in seconds):0.021
+o 2
+c starts		: 1
+c conflicts		: 2
+c decisions		: 3
+c propagations		: 35
+c inspects		: 74
+c shortcuts		: 0
+c learnt literals	: 2
+c learnt binary clauses	: 0
+c learnt ternary clauses	: 0
+c learnt constraints	: 0
+c ignored constraints	: 0
+c root simplifications	: 0
+c removed literals (reason simplification)	: 0
+c reason swapping (by a shorter reason)	: 0
+c Calls to reduceDB	: 0
+c number of reductions to clauses (during analyze)	: 0
+c number of learned constraints concerned by reduction	: 0
+c number of learning phase by resolution	: 0
+c number of learning phase by cutting planes	: 0
+c speed (assignments/second)	: 17500.0
+c non guided choices	0
+c learnt constraints type 
+c constraints type 
+c org.sat4j.minisat.constraints.cnf.OriginalWLClause => 10
+c org.sat4j.minisat.constraints.card.MinWatchCard => 0
+c org.sat4j.minisat.constraints.cnf.OriginalBinaryClause => 3
+c org.sat4j.pb.constraints.pb.MaxWatchPb => 9
+s OPTIMUM FOUND
+v x1 x2 x3 x4 -x5 x6 
+c objective function=2
+c Total wall clock time (in seconds): 0.024

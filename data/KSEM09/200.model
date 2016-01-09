@@ -1,0 +1,80 @@
+c SAT4J: a SATisfiability library for Java (c) 2004-2010 Daniel Le Berre
+c This is free software under the dual EPL/GNU LGPL licenses.
+c See www.sat4j.org for details.
+c This software uses some libraries from the Jakarta Commons project. See jakarta.apache.org for details.
+c version 2.2.2.v20101017
+c java.runtime.name	Java(TM) SE Runtime Environment
+c java.vm.name		Java HotSpot(TM) 64-Bit Server VM
+c java.vm.version	17.1-b03-307
+c java.vm.vendor	Apple Inc.
+c sun.arch.data.model	64
+c java.version		1.6.0_22
+c os.name		Mac OS X
+c os.version		10.6.4
+c os.arch		x86_64
+c Free memory 		263800488
+c Max memory 		532545536
+c Total memory 		266272768
+c Number of processors 	2
+c --- Begin Solver configuration ---
+c org.sat4j.pb.constraints.CompetResolutionPBMixedWLClauseCardConstrDataStructure@19e0ff2f
+c Learn all clauses as in MiniSAT
+c claDecay=0.999 varDecay=0.95 conflictBoundIncFactor=1.5 initConflictBound=100 
+c VSIDS like heuristics from MiniSAT using a heap lightweight component caching from RSAT taking into account the objective function
+c Expensive reason simplification
+c Armin Biere (Picosat) restarts strategy
+c Glucose learned constraints deletion strategy
+c timeout=120s
+c DB Simplification allowed=false
+c --- End Solver configuration ---
+c solving ./data/KSEM09/200.p.wcnf
+c reading problem ... 
+c ... done. Wall clock time 2.864s.
+c #vars     726400
+c #constraints  362400
+c constraints type 
+c org.sat4j.minisat.constraints.cnf.OriginalWLClause => 362400
+c OPTIMIZING...
+c Got one! Elapsed wall clock time (in seconds):164.602
+o 2944639
+c Got one! Elapsed wall clock time (in seconds):316.52
+o 177244
+c cleaning 2494 clauses out of 5001 with flag 5001/5001
+c cleaning 4232 clauses out of 8506 with flag 11000/11000
+c cleaning 5631 clauses out of 11274 with flag 18000/18000
+c cleaning 6816 clauses out of 13643 with flag 26000/26000
+c cleaning 7904 clauses out of 15827 with flag 35000/35000
+c cleaning 8954 clauses out of 17924 with flag 45001/45001
+c cleaning 9979 clauses out of 19970 with flag 56001/56001
+c cleaning 10995 clauses out of 21992 with flag 68002/68002
+c cleaning 11992 clauses out of 23995 with flag 81000/81000
+c cleaning 12993 clauses out of 26004 with flag 95001/95001
+c cleaning 13998 clauses out of 28010 with flag 110000/110000
+c starts		: 102
+c conflicts		: 120546
+c decisions		: 15708401
+c propagations		: 5435937738
+c inspects		: 322375523
+c shortcuts		: 0
+c learnt literals	: 0
+c learnt binary clauses	: 0
+c learnt ternary clauses	: 0
+c learnt constraints	: 120545
+c ignored constraints	: 0
+c root simplifications	: 0
+c removed literals (reason simplification)	: 12893
+c reason swapping (by a shorter reason)	: 0
+c Calls to reduceDB	: 11
+c number of reductions to clauses (during analyze)	: 0
+c number of learned constraints concerned by reduction	: 0
+c number of learning phase by resolution	: 0
+c number of learning phase by cutting planes	: 0
+c speed (assignments/second)	: 1309358.4402558624
+c non guided choices	329256
+c learnt constraints type 
+c org.sat4j.minisat.constraints.cnf.LearntWLClause => 24557
+c constraints type 
+c org.sat4j.minisat.constraints.cnf.OriginalWLClause => 362400
+c org.sat4j.pb.constraints.pb.MaxWatchPb => 1
+s UNKNOWN
+c Total wall clock time (in seconds): 4468.726

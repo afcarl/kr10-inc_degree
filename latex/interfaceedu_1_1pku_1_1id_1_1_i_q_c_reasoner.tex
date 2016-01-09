@@ -1,0 +1,65 @@
+\hypertarget{interfaceedu_1_1pku_1_1id_1_1_i_q_c_reasoner}{
+\section{edu.pku.id.IQCReasoner Interface Reference}
+\label{interfaceedu_1_1pku_1_1id_1_1_i_q_c_reasoner}\index{edu::pku::id::IQCReasoner@{edu::pku::id::IQCReasoner}}
+}
+Inheritance diagram for edu.pku.id.IQCReasoner:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfaceedu_1_1pku_1_1id_1_1_i_q_c_reasoner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract boolean \hyperlink{interfaceedu_1_1pku_1_1id_1_1_i_q_c_reasoner_a2cf3cc08877e6d06485e758bdbf5bf94}{qcEntails} (List$<$ IVecInt $>$ kb, IVecInt consequence)
+\item 
+abstract boolean \hyperlink{interfaceedu_1_1pku_1_1id_1_1_i_q_c_reasoner_a4d1172287213bd0be63dbd75f047aa7c}{isQcModel} (List$<$ IVecInt $>$ kb, List$<$ \hyperlink{namespaceedu_1_1pku_1_1id_a01cdd35063021f272bd905de5f43f634}{TruthValue} $>$ model)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interfaceedu_1_1pku_1_1id_1_1_i_q_c_reasoner_a4d1172287213bd0be63dbd75f047aa7c}{
+\index{edu::pku::id::IQCReasoner@{edu::pku::id::IQCReasoner}!isQcModel@{isQcModel}}
+\index{isQcModel@{isQcModel}!edu::pku::id::IQCReasoner@{edu::pku::id::IQCReasoner}}
+\subsubsection[{isQcModel}]{\setlength{\rightskip}{0pt plus 5cm}abstract boolean edu.pku.id.IQCReasoner.isQcModel (
+\begin{DoxyParamCaption}
+\item[{List$<$ IVecInt $>$}]{ kb, }
+\item[{List$<$ {\bf TruthValue} $>$}]{ model}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{interfaceedu_1_1pku_1_1id_1_1_i_q_c_reasoner_a4d1172287213bd0be63dbd75f047aa7c}
+
+
+Implemented in \hyperlink{classedu_1_1pku_1_1id_1_1_q_c_reasoner_a98bdf18d6a8222310060877e6cff6d80}{edu.pku.id.QCReasoner}.
+
+\hypertarget{interfaceedu_1_1pku_1_1id_1_1_i_q_c_reasoner_a2cf3cc08877e6d06485e758bdbf5bf94}{
+\index{edu::pku::id::IQCReasoner@{edu::pku::id::IQCReasoner}!qcEntails@{qcEntails}}
+\index{qcEntails@{qcEntails}!edu::pku::id::IQCReasoner@{edu::pku::id::IQCReasoner}}
+\subsubsection[{qcEntails}]{\setlength{\rightskip}{0pt plus 5cm}abstract boolean edu.pku.id.IQCReasoner.qcEntails (
+\begin{DoxyParamCaption}
+\item[{List$<$ IVecInt $>$}]{ kb, }
+\item[{IVecInt}]{ consequence}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{interfaceedu_1_1pku_1_1id_1_1_i_q_c_reasoner_a2cf3cc08877e6d06485e758bdbf5bf94}
+检测kb是否能够QC蕴含gamma
+
+
+\begin{DoxyParams}{Parameters}
+{\em kb} & 前提知识库,表示为子句的集合 \\
+\hline
+{\em consequence} & 结论,表示为子句 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+是否能够QC蕴含 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classedu_1_1pku_1_1id_1_1_q_c_reasoner_a0ce01daedfae2f88548978205d4848db}{edu.pku.id.QCReasoner}, and \hyperlink{classedu_1_1pku_1_1id_1_1_q_c_reasoner_v2_a04f22e9cef82ae44d46179d252ad46ef}{edu.pku.id.QCReasonerV2}.
+
+
+
+The documentation for this interface was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+src/edu/pku/id/\hyperlink{_i_q_c_reasoner_8java}{IQCReasoner.java}\end{DoxyCompactItemize}
